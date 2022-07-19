@@ -1,11 +1,15 @@
-
-
+import { Container } from '@mui/system';
 import './App.css';
-import Form from './components/form';
+
+import Form from './components/Form';
+import ToDoItem from './components/ToDoItem';
 
 function App() {
   return (
-    <Form />
+    <Container maxWidth="xs"> 
+      <Form />
+      <ToDoItem />
+    </Container>
   );
 }
 
