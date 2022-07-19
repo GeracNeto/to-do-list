@@ -1,14 +1,13 @@
 import React from "react";
 
 //importando do material
-import { TextField } from "@mui/material"; 
-import { Button } from "@mui/material"; 
+import { TextField, Button, Paper } from "@mui/material"; 
 
 export default function Form(){
     return(
-        <div>
+        <Paper>
             <TextField id="outlined-basic" label="Outlined" variant="outlined" />
             <Button variant="contained">Add</Button>
-        </div>
+        </Paper>
     );
 }
