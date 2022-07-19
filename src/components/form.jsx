@@ -3,7 +3,7 @@ import React, { useState } from "react";
 //importando do material
 import { TextField, Button, Paper } from "@mui/material"; 
 
-export default function Form({todoHandler}){
+export default function Form({addTodo}){
     
     const [text, setText] = useState(null); // Variável para guardar o texto digitado
     const [id, setId] = useState(0); // Variável para o id dos itens da lista
@@ -11,7 +11,7 @@ export default function Form({todoHandler}){
     const todoCreate = (text) => {
         const todoObj = {text: text, id: id};
         setId(id + 1);
-        todoHandler(todoObj)
+        addTodo(todoObj)
     }
 
     return(

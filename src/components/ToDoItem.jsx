@@ -10,13 +10,13 @@ import CommentIcon from '@mui/icons-material/Comment';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { Paper } from '@mui/material';
 
-export default function ToDoItem({todo}) {
+export default function ToDoItem({todo, deleteTodo}) {
 
   return (
   <Paper style={{padding: '0.5em 0'}}>
     <ListItem
     secondaryAction={
-      <IconButton edge="end" aria-label="comments">
+      <IconButton edge="end" aria-label="delete" onClick={() => deleteTodo(todo.id)}>
         <DeleteIcon />
       </IconButton>
     }
