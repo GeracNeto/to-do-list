@@ -10,10 +10,10 @@ import CommentIcon from '@mui/icons-material/Comment';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { Paper } from '@mui/material';
 
-export default function ToDoItem() {
+export default function ToDoItem({todo}) {
 
   return (
-  <Paper>
+  <Paper style={{padding: '0.5em 0'}}>
     <ListItem
     secondaryAction={
       <IconButton edge="end" aria-label="comments">
@@ -30,7 +30,7 @@ export default function ToDoItem() {
           disableRipple
         />
       </ListItemIcon>
-      <ListItemText primary={'Line Item'}/>
+      <ListItemText primary={todo.text}/>
     </ListItemButton>
   </ListItem>
   </Paper>
