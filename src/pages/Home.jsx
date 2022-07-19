@@ -16,7 +16,11 @@ export default function Home(){
     }
 
     const deleteTodo = (id) => {
-        console.log(id);
+        console.log(`Deletado ID: ${id}`);
+
+        let filtered = todos.filter((todo) => todo.id !== id); // Array com os objetos não excluidos
+
+        setTodos(filtered);
     }
 
     return(
