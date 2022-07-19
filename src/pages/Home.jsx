@@ -12,7 +12,12 @@ export default function Home(){
 
     const addTodo = (todo) => {
         console.log(todo)
-        setTodos([...todos, todo]);
+        if(todo.text === "" || todo.text === null){
+            alert('To Do is Empty');
+        }
+        else{
+            setTodos([...todos, todo]);
+        }
     }
 
     const deleteTodo = (id) => {
