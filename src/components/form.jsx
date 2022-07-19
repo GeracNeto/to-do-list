@@ -5,9 +5,11 @@ import { TextField, Button, Paper } from "@mui/material";
 
 export default function Form(){
     return(
-        <Paper>
-            <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-            <Button variant="contained">Add</Button>
+        <Paper style={{ padding: "1em" }}>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+                <TextField id="outlined-basic" label="Tarefa" variant="outlined"  fullWidth/>
+                <Button variant="contained">Add</Button>
+            </div>
         </Paper>
     );
 }
