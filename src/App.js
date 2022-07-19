@@ -6,7 +6,7 @@ import ToDoItem from './components/ToDoItem';
 
 function App() {
   return (
-    <Container maxWidth="xs"> 
+    <Container maxWidth="xs" style={{marginTop: "1em"}}> 
       <Form />
       <ToDoItem />
     </Container>
